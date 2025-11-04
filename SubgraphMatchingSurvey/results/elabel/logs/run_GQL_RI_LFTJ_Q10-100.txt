@@ -1,0 +1,72 @@
+Command Line:
+	Data Graph CSR: 
+	Data Graph: /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/HPRD_elabeled.txt
+	Query Graph: /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/elabel/Q10-100.txt
+	Filter Type: GQL
+	Order Type: RI
+	Engine Type: LFTJ
+	Output Limit: MAX
+	Time Limit (seconds): 60
+	Order Num: 100
+	Distribution File Path: temp.distribution
+--------------------------------------------------------------------
+Load graphs...
+-----
+Query Graph Meta Information
+|V|: 10, |E|: 10, |Σ|: 10
+Max Degree: 5, Max Label Frequency: 3
+#Edge Label: 15
+-----
+|V|: 9303, |E|: 34998, |Σ|: 15
+Max Degree: 247, Max Label Frequency: 646
+#Edge Label: 15
+--------------------------------------------------------------------
+Start queries...
+-----
+Filter candidates...
+-----
+Build indices...
+-----
+Generate a matching order...
+5, 1, 0, 3, 4, 6, 7, 2, 8, 9,   
+Query Plan: 5 1 0 3 4 6 7 2 8 9 
+-----
+Enumerate...
+--------------------------------------------------------------------
+Release memories...
+--------------------------------------------------------------------
+Load graphs time (seconds): 0.0212
+Filter vertices time (seconds): 0.0004
+Build table time (seconds): 0.0001
+Generate query plan time (seconds): 0.0000
+Enumerate time (seconds): 0.0000
+Preprocessing time (seconds): 0.0006
+Total time (seconds): 0.0006
+Memory cost (MB): 0.0002
+#Embeddings: 1
+Call Count: 9
+Per Call Count Time (nanoseconds): 1211.1111
+End.
+	Command being timed: "./SubgraphMatching.out -d /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/HPRD_elabeled.txt -q /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/elabel/Q10-100.txt -filter GQL -order RI -engine LFTJ -num MAX"
+	User time (seconds): 0.02
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.02
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 17496
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3564
+	Voluntary context switches: 1
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

@@ -1,0 +1,85 @@
+Command Line:
+	Data Graph CSR: 
+	Data Graph: /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/HPRD_elabeled.txt
+	Query Graph: /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/elabel/Q10-150.txt
+	Filter Type: CaLiG
+	Order Type: RI
+	Engine Type: KSS
+	Output Limit: MAX
+	Time Limit (seconds): 60
+	Order Num: 100
+	Distribution File Path: temp.distribution
+--------------------------------------------------------------------
+Load graphs...
+-----
+Query Graph Meta Information
+|V|: 10, |E|: 12, |Σ|: 14
+Max Degree: 5, Max Label Frequency: 2
+#Edge Label: 15
+-----
+|V|: 9303, |E|: 34998, |Σ|: 15
+Max Degree: 247, Max Label Frequency: 646
+#Edge Label: 15
+--------------------------------------------------------------------
+Start queries...
+-----
+Filter candidates...
+-----
+Build indices...
+-----
+Generate a matching order...
+3, 7, 6, 1, 4, 8, 2, 9, 0, 5,   
+Query Plan: 3 7 6 1 4 8 2 9 0 5 
+-----
+Enumerate...
+query_vertices_num:10
+kernel_num:6
+shell_num:4
+candidate of u_shell 1: 2274,
+candidate of u_shell 8: 1307,
+candidate of u_shell 0: 544,
+candidate of u_shell 5: 1221,
+1
+candidate of u_shell 1: 2274,
+candidate of u_shell 8: 1307,
+candidate of u_shell 0: 544,
+candidate of u_shell 5: 1295,
+2
+--------------------------------------------------------------------
+Release memories...
+--------------------------------------------------------------------
+Load graphs time (seconds): 0.0290
+Filter vertices time (seconds): 0.0005
+Build table time (seconds): 0.0002
+Generate query plan time (seconds): 0.0000
+Enumerate time (seconds): 0.0000
+Preprocessing time (seconds): 0.0007
+Total time (seconds): 0.0007
+Memory cost (MB): 0.0003
+#Embeddings: 2
+Call Count: 6
+Per Call Count Time (nanoseconds): 4733.3333
+End.
+	Command being timed: "./SubgraphMatching.out -d /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/HPRD_elabeled.txt -q /home/kazuma/SubgraphMatchingSurvey/elabel/elabel_test/elabel/Q10-150.txt -filter CaLiG -order RI -engine KSS -num MAX"
+	User time (seconds): 0.02
+	System time (seconds): 0.01
+	Percent of CPU this job got: 94%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.03
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 17452
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 3554
+	Voluntary context switches: 0
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

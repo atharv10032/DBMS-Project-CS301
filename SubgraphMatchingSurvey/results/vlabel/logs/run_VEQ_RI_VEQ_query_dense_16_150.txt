@@ -1,0 +1,118 @@
+Command Line:
+	Data Graph CSR: 
+	Data Graph: /home/kazuma/SubgraphMatchingSurvey/vlabel/test/data_graph/HPRD.graph
+	Query Graph: /home/kazuma/SubgraphMatchingSurvey/vlabel/test/query_graph/query_dense_16_150.graph
+	Filter Type: VEQ
+	Order Type: RI
+	Engine Type: VEQ
+	Output Limit: MAX
+	Time Limit (seconds): 60
+	Order Num: 100
+	Distribution File Path: temp.distribution
+	Enable Symmetry: 
+--------------------------------------------------------------------
+Load graphs...
+-----
+Query Graph Meta Information
+|V|: 16, |E|: 24, |Σ|: 208
+Max Degree: 8, Max Label Frequency: 2
+-----
+|V|: 9460, |E|: 34998, |Σ|: 307
+Max Degree: 247, Max Label Frequency: 957
+--------------------------------------------------------------------
+Start queries...
+-----
+Filter candidates...
+ candidates_cnt before edge check: 208,73,9,62,11,5,588,13,80,477,373,130,477,123,19,167,
+edgeCheckTime:0.1303
+ candidates before NLF check: 
+u(0): 77,
+u(1): 70,93,
+u(2): 126,
+u(3): 5320,394,
+u(4): 406,
+u(5): 1488,
+u(6): 1614,
+u(7): 1869,
+u(8): 5780,4133,2455,1900,
+u(9): 3457,2063,235,
+u(10): 2457,
+u(11): 5311,
+u(12): 5332,
+u(13): 5445,
+u(14): 6292,
+u(15): 9018,3328,
+v.size(0) < u.size(2)
+v(5320) < u(3)
+v.size(2) < u.size(3)
+v(5780) < u(8)
+v_label(1) < u_label(2)
+v.size(2) < u.size(3)
+v(70) < u(1)
+v.size(2) < u.size(3)
+v(3457) < u(9)
+VEQPruneTime:0.0553
+VEQCompactTime:0.0004
+ candidates after NLF check: 
+u(0): 77,
+u(1): 93,
+u(2): 126,
+u(3): 394,
+u(4): 406,
+u(5): 1488,
+u(6): 1614,
+u(7): 1869,
+u(8): 1900,2455,
+u(9): 235,2063,
+u(10): 2457,
+u(11): 5311,
+u(12): 5332,
+u(13): 5445,
+u(14): 6292,
+u(15): 9018,3328,
+-----
+Build indices...
+-----
+Generate a matching order...
+0, 1, 5, 8, 10, 9, 12, 14, 15, 6, 7, 3, 4, 11, 13, 2,   
+Query Plan: 0 1 5 8 10 9 12 14 15 6 7 3 4 11 13 2 
+-----
+Enumerate...
+--------------------------------------------------------------------
+Release memories...
+--------------------------------------------------------------------
+Load graphs time (seconds): 0.0134
+Filter vertices time (seconds): 0.0003
+Build table time (seconds): 0.0001
+Generate query plan time (seconds): 0.0000
+Enumerate time (seconds): 0.0000
+Preprocessing time (seconds): 0.0005
+Total time (seconds): 0.0005
+Memory cost (MB): 0.0005
+#Embeddings: 6
+Call Count: 36
+Per Call Count Time (nanoseconds): 922.2222
+End.
+	Command being timed: "./SubgraphMatching.out -d /home/kazuma/SubgraphMatchingSurvey/vlabel/test/data_graph/HPRD.graph -q /home/kazuma/SubgraphMatchingSurvey/vlabel/test/query_graph/query_dense_16_150.graph -filter VEQ -order RI -engine VEQ -num MAX"
+	User time (seconds): 0.01
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10240
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1724
+	Voluntary context switches: 1
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

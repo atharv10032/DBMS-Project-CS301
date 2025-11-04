@@ -1,0 +1,71 @@
+Command Line:
+	Data Graph CSR: 
+	Data Graph: /home/kazuma/SubgraphMatchingSurvey/vlabel/test/data_graph/HPRD.graph
+	Query Graph: /home/kazuma/SubgraphMatchingSurvey/vlabel/test/query_graph/query_dense_16_50.graph
+	Filter Type: GQL
+	Order Type: RI
+	Engine Type: LFTJ
+	Output Limit: MAX
+	Time Limit (seconds): 60
+	Order Num: 100
+	Distribution File Path: temp.distribution
+	Enable Symmetry: 
+--------------------------------------------------------------------
+Load graphs...
+-----
+Query Graph Meta Information
+|V|: 16, |E|: 26, |Σ|: 208
+Max Degree: 7, Max Label Frequency: 2
+-----
+|V|: 9460, |E|: 34998, |Σ|: 307
+Max Degree: 247, Max Label Frequency: 957
+--------------------------------------------------------------------
+Start queries...
+-----
+Filter candidates...
+-----
+Build indices...
+-----
+Generate a matching order...
+6, 3, 0, 1, 5, 4, 7, 2, 9, 11, 13, 10, 12, 14, 15, 8,   
+Query Plan: 6 3 0 1 5 4 7 2 9 11 13 10 12 14 15 8 
+-----
+Enumerate...
+--------------------------------------------------------------------
+Release memories...
+--------------------------------------------------------------------
+Load graphs time (seconds): 0.0152
+Filter vertices time (seconds): 0.0003
+Build table time (seconds): 0.0002
+Generate query plan time (seconds): 0.0000
+Enumerate time (seconds): 0.0000
+Preprocessing time (seconds): 0.0005
+Total time (seconds): 0.0006
+Memory cost (MB): 0.0008
+#Embeddings: 88
+Call Count: 22
+Per Call Count Time (nanoseconds): 963.6364
+End.
+	Command being timed: "./SubgraphMatching.out -d /home/kazuma/SubgraphMatchingSurvey/vlabel/test/data_graph/HPRD.graph -q /home/kazuma/SubgraphMatchingSurvey/vlabel/test/query_graph/query_dense_16_50.graph -filter GQL -order RI -engine LFTJ -num MAX"
+	User time (seconds): 0.01
+	System time (seconds): 0.00
+	Percent of CPU this job got: 84%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 10164
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1706
+	Voluntary context switches: 0
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
